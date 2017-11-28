@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "PUBLISHABLE_KEY=pk_test_Bc1LRBFsyf6k2J4pE94XHEEJ SECRET_KEY=sk_test_z40FmvVRw5jZVZNYFpl3ZeBr node app.js"
   },
   "keywords": [],
   "author": "",
