@@ -13,7 +13,6 @@ res.render("index.pug", {keyPublishable}));
 
 app.post("/charge", (req, res) => {
         let amount = req.body.paiementValue;
-        console.log(amount);
         stripe.customers.create({
         email: req.body.stripeEmail,
         source: req.body.stripeToken
@@ -26,7 +25,7 @@ app.post("/charge", (req, res) => {
                 customer: customer.id
         }))
         .then(charge => 
-            res.render("index.pug"));
+            res.render("charge.pug"));
         });
 
 app.listen(port, function() {
